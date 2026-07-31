@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "zsoil-py"
+version = "0.1.0"
+description = "ZSoil output processing utilities"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "numpy",
+    "matplotlib",
+    "xlrd",
+    "xlwt",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"] # Explicitly binds "import zsoil_py" to your src directory
